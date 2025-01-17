@@ -14,7 +14,7 @@ defmodule FizzBuzz do
     {:ok, result}
   end
 
-  defp handle_file_read({:error, reason}), do: {:error, "Error reading the file: #(reason)"}
+  defp handle_file_read({:error, reason}), do: {:error, "Error reading the file: #{reason}"}
 
   defp convert_and_evaluate_numbers(elem) do
     elem
